@@ -117,6 +117,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation("androidx.core:core:1.13.1") {
+    exclude group: "com.android.support", module: "support-compat"
+}
 }
 project.ext.vectoricons = [
     iconFontNames: [ 'MaterialCommunityIcons.ttf' ] // Add others if needed
